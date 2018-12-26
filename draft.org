@@ -27,6 +27,10 @@
 *** JSON
 - circe [[https://circe.github.io/circe/]]
 
+*** RPC
+- Protobuf 
+- ScalaPB https://scalapb.github.io/
+  
 ** DB Layer
 
 *** Server
@@ -38,6 +42,17 @@
 
 *** KV Store
 - Aerospike Community Edition [[https://www.aerospike.com]]
+
+*** Scala Relative
+
+**** SBT plugins
+- ~sbt-scoverage~ for code coverage
+- ~sbt-native-packager~ for packaging
+- ~sbt-wartremover~ for code linting
+- ~sbt-protoc~ ~scalapb compilerplugin~ for protobuf compiling
+
+**** Code formatting
+- ~scalafmt~
 
 ** OPS etc
 
