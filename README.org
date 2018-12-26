@@ -54,6 +54,11 @@
 **** Code formatting
 - ~scalafmt~
 
+**** Unit Test
+- ~akka-testkit~
+- ~akka-http-testkit~
+- ~scalatest~
+
 ** OPS etc
 
 *** Server OS
