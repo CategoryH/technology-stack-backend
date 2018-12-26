@@ -2,7 +2,7 @@
 #+DATE: 2018-12-26 Wednesday
 #+LaTeX_CLASS: org-article
 
-* 后端技术栈草案
+* Plan A
 
 ** Web Layer
 
