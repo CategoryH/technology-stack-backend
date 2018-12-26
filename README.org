@@ -17,7 +17,6 @@
 *** API docs
 - swagger
 - swagger-akka-http [[https://github.com/swagger-akka-http/swagger-akka-http]] 
-- jwt-circe [[https://github.com/pauldijou/jwt-scala]]
 - swagger UI [[https://swagger.io/tools/swagger-ui/]]
   
 *** Session Layer
