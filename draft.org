@@ -1,0 +1,58 @@
+#+TITLE: Technology Stack for Backend (Draft)
+#+DATE: 2018-12-26 Wednesday
+#+LaTeX_CLASS: org-article
+
+* 后端技术栈草案
+
+** Web Layer
+
+*** Web Service
+- Akka Http [[https://doc.akka.io/docs/akka-http/current/]]
+
+*** Logging
+- scala-logging [[https://github.com/lightbend/scala-logging]]
+- akka-slf4j 
+- logback classic
+
+*** API docs
+- swagger
+- swagger-akka-http [[https://github.com/swagger-akka-http/swagger-akka-http]] 
+- jwt-circe [[https://github.com/pauldijou/jwt-scala]]
+- swagger UI [[https://swagger.io/tools/swagger-ui/]]
+  
+*** Session Layer
+- akka-http-session [[https://github.com/softwaremill/akka-http-session]]
+-  jwt-circe [[https://github.com/pauldijou/jwt-scala]]
+
+*** JSON
+- circe [[https://circe.github.io/circe/]]
+
+** DB Layer
+
+*** Server
+- PostgreSQL 11, 暂时单机，不分库不分区
+
+*** Client libary
+- slick [[http://slick.lightbend.com/]] 
+- slick-hikaricp [[https://github.com/slick/slick/tree/master/slick-hikaricp]]
+
+*** KV Store
+- Aerospike Community Edition [[https://www.aerospike.com]]
+
+** OPS etc
+
+*** Server OS
+- Ubuntu
+
+*** Monitor System
+- Backend: Prometheus https://prometheus.io/
+- Frontend: Grafana https://grafana.com/
+- App Client: Prometheus Java Client https://github.com/prometheus/client_java
+  
+** OLAP System 
+
+*** Messaging System
+- Kafka
+
+*** Data Warehouse
+- PostgreSQL 11 (can be relaced with Greenplum or Clickhouse later)
