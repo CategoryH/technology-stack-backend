@@ -39,6 +39,7 @@
 *** Client libary
 - slick [[http://slick.lightbend.com/]] 
 - slick-hikaricp [[https://github.com/slick/slick/tree/master/slick-hikaricp]]
+- slick-pg https://github.com/tminglei/slick-pg
 
 *** KV Store
 - Aerospike Community Edition [[https://www.aerospike.com]]
