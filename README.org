@@ -43,7 +43,7 @@
 *** KV Store
 - Aerospike Community Edition [[https://www.aerospike.com]]
 
-*** Scala Relative
+** Scala Relative
 
 **** SBT plugins
 - ~sbt-scoverage~ for code coverage
