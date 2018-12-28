@@ -44,8 +44,8 @@
   - ~sbt-wartremover~ for code linting
   - ~sbt-protoc~ ~scalapb compilerplugin~ for protobuf compiling
 
-  - Code formatting
-    - ~scalafmt~
+- Code formatting
+  - ~scalafmt~
 
 - Unit Test
   - ~akka-testkit~
