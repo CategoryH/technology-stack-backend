@@ -2,87 +2,7 @@
 #+DATE: 2018-12-26 Wednesday
 #+LaTeX_CLASS: org-article
 
-* Plan A
-
 ** Web Layer
-
-*** Web Service
-- Akka Http [[https://doc.akka.io/docs/akka-http/current/]]
-
-*** API docs
-- swagger
-- swagger-akka-http [[https://github.com/swagger-akka-http/swagger-akka-http]] 
-- swagger UI [[https://swagger.io/tools/swagger-ui/]]
-  
-*** Session Layer
-- akka-http-session [[https://github.com/softwaremill/akka-http-session]]
--  jwt-circe [[https://github.com/pauldijou/jwt-scala]]
-
-*** JSON
-- circe [[https://circe.github.io/circe/]]
-
-*** RPC
-- Protobuf 
-- ScalaPB https://scalapb.github.io/
-  
-** DB Layer
-
-*** Server
-- PostgreSQL 11, 不分库不分区, 如有不少于两台机器，可以考虑做流式复制
-
-*** Client library
-- slick [[http://slick.lightbend.com/]] 
-- slick-hikaricp [[https://github.com/slick/slick/tree/master/slick-hikaricp]]
-- slick-pg https://github.com/tminglei/slick-pg
-
-*** KV Store
-- Aerospike Community Edition [[https://www.aerospike.com]]
-
-
-** Language && Core Library
-
-**** SBT plugins
-- ~sbt-scoverage~ for code coverage
-- ~sbt-native-packager~ for packaging
-- ~sbt-wartremover~ for code linting
-- ~sbt-protoc~ ~scalapb compilerplugin~ for protobuf compiling
-
-**** Logging
-- scala-logging [[https://github.com/lightbend/scala-logging]]
-- akka-slf4j 
-- logback classic
-
-**** Code formatting
-- ~scalafmt~
-
-**** Unit Test
-- ~akka-testkit~
-- ~akka-http-testkit~
-- ~scalatest~
-
-** OPS etc
-
-*** Server OS
-- Ubuntu
-
-*** Monitor System
-- Backend: Prometheus https://prometheus.io/
-- Frontend: Grafana https://grafana.com/
-- App Client: Prometheus Java Client https://github.com/prometheus/client_java
-  
-** OLAP System 
-
-*** Messaging System
-- Kafka
-
-*** Data Warehouse
-- PostgreSQL 11 (can be relaced with Greenplum or Clickhouse later)
-
-  
-* Plan B
-
-** Web Layer
-
 *** Web Service
 - service: http4s [[https://http4s.org/]]
 *** API docs
@@ -96,8 +16,16 @@
   - tsec-password
   - tsec-http4s
   
-** DB Layer
+*** JSON
+- circe [[https://circe.github.io/circe/]]
 
+*** RPC
+- Protobuf 
+- ScalaPB https://scalapb.github.io/
+  
+** Database Layer
+*** Server
+- PostgreSQL 11
 *** Client library
 - doobie http://tpolecat.github.io/doobie/
   - doobie-h2 (for unit test)
@@ -105,6 +33,50 @@
   - doobie-postgres
   - doobie-scalatest
 
+*** KV Store
+- Aerospike Community Edition [[https://www.aerospike.com]]
+
 ** Language && Core Library
- - IO: ~cats-effect~ [[https://typelevel.org/cats-effect/]]
- - Logging: scala-logging or ~log4cats~ [[https://github.com/ChristopherDavenport/log4cats]]
+
+- SBT plugins
+  - ~sbt-scoverage~ for code coverage
+  - ~sbt-native-packager~ for packaging
+  - ~sbt-wartremover~ for code linting
+  - ~sbt-protoc~ ~scalapb compilerplugin~ for protobuf compiling
+
+  - Code formatting
+    - ~scalafmt~
+
+- Unit Test
+  - ~akka-testkit~
+  - ~akka-http-testkit~
+  - ~scalatest~
+
+- IO
+  - ~cats-effect~ [[https://typelevel.org/cats-effect/]]
+  
+- Logging
+  - ~scala-logging~ [[https://github.com/lightbend/scala-logging]]
+  - ~log4cats~ [[https://github.com/ChristopherDavenport/log4cats]]
+  
+** OPS etc
+
+*** Server OS
+- Ubuntu
+- Debian
+  
+*** Monitor System
+- Backend
+  - Prometheus https://prometheus.io/
+- Frontend
+  - Grafana https://grafana.com/
+- App Client
+  - Prometheus Java Client https://github.com/prometheus/client_java
+  
+** OLAP System 
+*** Messaging System
+- Kafka
+
+*** Data Warehouse
+- PostgreSQL 11 (can be relaced with Greenplum or Clickhouse later)
+  
