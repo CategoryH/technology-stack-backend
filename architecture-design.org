@@ -1,0 +1,15 @@
+#+TITLE: Architecture in Backend (Draft)
+#+DATE: 2018-12-28 Friday
+#+LaTeX_CLASS: org-article
+
+** Stage 1
+
+#+CAPTION: This is the stage 1 overview
+#+NAME: 
+[[./img/architecture-stage-1.png]]
+
+** Stage 2
+
+#+CAPTION: This is the stage 2 overview
+#+NAME: 
+[[./img/architecture-stage-2.png]]
