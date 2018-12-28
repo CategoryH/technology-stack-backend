@@ -33,9 +33,9 @@
 ** DB Layer
 
 *** Server
-- PostgreSQL 11, 暂时单机，不分库不分区
+- PostgreSQL 11, 不分库不分区, 如有不少于两台机器，可以考虑做流式复制
 
-*** Client libary
+*** Client library
 - slick [[http://slick.lightbend.com/]] 
 - slick-hikaricp [[https://github.com/slick/slick/tree/master/slick-hikaricp]]
 - slick-pg https://github.com/tminglei/slick-pg
@@ -97,10 +97,7 @@
   
 ** DB Layer
 
-*** Server
-- PostgreSQL 11, 暂时单机，不分库不分区
-
-*** Client libary
+*** Client library
 - doobie http://tpolecat.github.io/doobie/
   - doobie-h2 (for unit test)
   - doobie-hikari 
