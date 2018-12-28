@@ -106,5 +106,5 @@
   - doobie-scalatest
 
 ** Language && Core Library
- - IO: ~cats-effect~ [[https://typelevel.org/cats-effect/]
+ - IO: ~cats-effect~ [[https://typelevel.org/cats-effect/]]
  - Logging: scala-logging or ~log4cats~ [[https://github.com/ChristopherDavenport/log4cats]]
