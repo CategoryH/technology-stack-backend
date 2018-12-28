@@ -6,10 +6,10 @@
 
 #+CAPTION: This is the stage 1 overview
 #+NAME: 
-[[./img/architecture-stage-1.png]]
+[[./img/architecture-stage-1.svg]]
 
 ** Stage 2
 
 #+CAPTION: This is the stage 2 overview
 #+NAME: 
-[[./img/architecture-stage-2.png]]
+[[./img/architecture-stage-2.svg]]
