@@ -76,3 +76,34 @@
 
 *** Data Warehouse
 - PostgreSQL 11 (can be relaced with Greenplum or Clickhouse later)
+
+  
+* Plan B
+
+** Web Layer
+
+*** Web Service
+- service: http4s [[https://http4s.org/]]
+*** API docs
+- swagger
+- ρ [[https://github.com/http4s/rho]]
+- swagger UI [[https://swagger.io/tools/swagger-ui/]]
+  
+*** Session Layer
+- TSec https://jmcardon.github.io/tsec/
+  - tsec-common
+  - tsec-password
+  - tsec-http4s
+  
+** DB Layer
+
+*** Server
+- PostgreSQL 11, 暂时单机，不分库不分区
+
+*** Client libary
+- doobie http://tpolecat.github.io/doobie/
+  - doobie-h2 (for unit test)
+  - doobie-hikari 
+  - doobie-postgres
+  - doobie-scalatest
+
